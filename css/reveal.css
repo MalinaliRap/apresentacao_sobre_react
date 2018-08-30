@@ -173,6 +173,14 @@ body {
 .reveal .slides section .fragment.highlight-current-blue.current-fragment {
   color: #1b91ff; }
 
+#react-logo{
+  border:0px;
+  background-color: transparent;
+  margin: 0px;
+  box-shadow: 0 0 0;
+  width: 400px;
+  height: 300px;
+}
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/

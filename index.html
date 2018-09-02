@@ -24,14 +24,16 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h2>
-						<b>React</b>
-					</h2>
-					<img id="react-logo" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png">
-					<p>Gabriel Coplas Becher</p>
-					<p>softmalisolucoes@gmail.com</p>
-					<p><a href="https://github.com/MalinaliRap">github.com/MalinaliRap</a></p>
+				<section data-background-color="#00004d">
+
+                        <h2>
+                            <b>React</b>
+                        </h2>
+                        <img id="react-logo" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png">
+                        <p style="color:deepskyblue;">Gabriel Coplas Becher</p>
+                        <p style="color:deepskyblue;">softmalisolucoes@gmail.com</p>
+                        <p><a href="https://github.com/MalinaliRap">github.com/MalinaliRap</a></p>
+
 				</section>
 				<section>
 					<section>
@@ -43,14 +45,19 @@
 			
 						<ul>
                             <li>Versão atual: 16.X.</li>
-                            <li>Utilizar o Virtual DOM.</li>
-							<li>O React é uma biblioteca para criar interface para o usuário (UI).</li>
-                            <li>O React é baseado em componentes.</li>
-							<li>Foi criado pelo facebook para lidar com o alto trafego de dados de uma página web.</li>
-							<li>Quando o projeto foi liberado em 2013, foi recebido com ceticismo.</li>
-
-						</ul>
+                            <li>Utiliza o Virtual DOM.</li>
+                            <a href="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
+                                <img style="width:800px" src="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
+                            </a>
+                        </ul>
 					</section>
+                    <section>
+                        <ul>
+                            <li>O React é baseado em componentes.</li>
+                            <li>Foi criado pelo facebook para lidar com o alto trafego de dados de uma página web.</li>
+                            <li>Quando o projeto foi liberado em 2013, foi recebido com ceticismo.</li>
+                        </ul>
+                    </section>
 					<section>
 						<h2>
 							<b>Porque as pessoas são céticas quanto ao React?</b>
@@ -59,7 +66,7 @@
 					<section>
 						<ul>
 							<li>O React é uma pequena biblioteca e não vem com tudo que é necessário para construir uma aplicação.</li>
-							<li>Você escreve algo parecido com HTML (tags) no seu código javascript.</li>
+							<li>Você escreve algo parecido com HTML (JSX) no seu código javascript.</li>
 							<li>Essas tags precisaram ser pré-processadas antes de rodar no browser.</li>
 							<li>Provavelmente você precisará construir um webpack ou um   browserify para isto.</li>
 						</ul>
@@ -109,7 +116,7 @@
                    </section>
                     <section>
                         <ul>
-                            <li>O React é uma biblioteca para UI.</li>
+                            <li>O React é uma biblioteca para criar interface para o usuário (UI).</li>
                             <li>O React pode ser utilizado no modelo MVC, representando o "V".</li>
                             <li>O React pode ser utilizado com frameworks como Angular, Ember, Redux, Reflux, Flux ...</li>
                             <li>É possivel criar aplicações simples apenas com React</li>
@@ -136,7 +143,79 @@
                         </ul>
                     </section>
                 </section>
-
+                <section>
+                    <section>
+                       <h2>
+                           <b> Vamos começar nossa primeira aplicação</b>
+                       </h2>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>
+                                Pré-Requisitos
+                            </b>
+                        </h2>
+                        <ul>
+                            <li>JavaScript (De preferência ES6 ou ECMAScript 6), HTML, CSS.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>
+                                O que é necessário instalar?
+                            </b>
+                        </h2>
+                        <ul>
+                            <li><a href="https://nodejs.org/en/">Node (versão > 6 LTS)</a></li>
+                            <li><a href="https://www.npmjs.com/"> npm (versão > 3.x)</a> - incluso na instalação do node.js</li>
+                            <li><a href="https://github.com/facebook/create-react-app">create-react-app</a></li>
+                            <li>Editor de texto</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>Abra seu terminal windows ou linux</b>
+                        </h2>
+                        <ul>
+                            <li>Escolha um diretório.</li>
+                            <li>digite: npm install -g create-react-app</li>
+                            <li>digite: create-react-app nome_da_aplicacao</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>
+                            Comandos
+                        </h2>
+                    </section>
+                    <section>
+                        <ul>
+                            <li><b style="color:gray;">npm start:</b> para rodar aplicação.</li>
+                            <li><b style="color:gray;">npm run build:</b>  roda uma script para fazer o build, comprimir algumas coisas do seu projeto.</li>
+                            <li><b style="color:gray;">npm test:</b> fazer testes.</li>
+                            <li><b style="color:gray;">npm run eject:</b> permite você modificar o webpack manualmente, é irreversivel.</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>
+                            <b>
+                                Components - Componentes
+                            </b>
+                        </h2>
+                        <p> Funcionam como funções JavaScript. Os parametros de entrada são chamados de <i style="color:gray;">props</i> e o retorno é dado em elementos HTML (JSX) </p>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>
+                                State - Estado
+                            </b>
+                        </h2>
+                        <p>
+                            O estado pode ser qualquer conjunto de informações que serão utilizadas em algum momento pela interface. Por exemplo: As informações do usuário, uma lista de itens, o resultado de um request ou até informações específicas de UI...
+                        </p>
+                    </section>
+                </section>
 
 			</div>
 		</div>

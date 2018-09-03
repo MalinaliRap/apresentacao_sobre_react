@@ -46,10 +46,10 @@
 						<ul>
                             <li>Versão atual: 16.X.</li>
                             <li>Utiliza o Virtual DOM.</li>
-                            <a href="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
-                                <img style="width:800px" src="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
-                            </a>
                         </ul>
+                        <a href="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
+                            <img style="width:1200px;margin-top: 20px; border:0px;background-color: transparent;margin: 0px;box-shadow: 0 0 0; " src="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
+                        </a>
 					</section>
                     <section>
                         <ul>
@@ -145,9 +145,29 @@
                 </section>
                 <section>
                     <section>
-                       <h2>
-                           <b> Vamos começar nossa primeira aplicação</b>
-                       </h2>
+                        <h2>
+                            <b>
+                                Components - Componentes
+                            </b>
+                        </h2>
+                        <p> Funcionam como funções JavaScript. Os parametros de entrada são chamados de <i style="color:gray;">props</i> e o retorno é dado em elementos HTML (JSX) </p>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>
+                                State - Estado
+                            </b>
+                        </h2>
+                        <p>
+                            O estado pode ser qualquer conjunto de informações que serão utilizadas em algum momento pela interface. Por exemplo: As informações do usuário, uma lista de itens, o resultado de um request ou até informações específicas de UI...
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>
+                            <b> Vamos começar nossa primeira aplicação</b>
+                        </h2>
                     </section>
                     <section>
                         <h2>
@@ -174,46 +194,51 @@
                     </section>
                     <section>
                         <h2>
-                            <b>Abra seu terminal windows ou linux</b>
+                            <b>1. Abra seu terminal windows ou linux</b>
                         </h2>
-                        <ul>
-                            <li>Escolha um diretório.</li>
-                            <li>digite: npm install -g create-react-app</li>
-                            <li>digite: create-react-app nome_da_aplicacao</li>
-                        </ul>
+    Escolha um diretório.
+                        <pre class="linux"><code>
+    npm install -g create-react-app
+    create-react-app nome_da_aplicacao
+                            </code></pre>
                     </section>
                     <section>
                         <h2>
                             Comandos
                         </h2>
-                    </section>
-                    <section>
-                        <ul>
-                            <li><b style="color:gray;">npm start:</b> para rodar aplicação.</li>
-                            <li><b style="color:gray;">npm run build:</b>  roda uma script para fazer o build, comprimir algumas coisas do seu projeto.</li>
-                            <li><b style="color:gray;">npm test:</b> fazer testes.</li>
-                            <li><b style="color:gray;">npm run eject:</b> permite você modificar o webpack manualmente, é irreversivel.</li>
-                        </ul>
-                    </section>
-                </section>
-                <section>
-                    <section>
-                        <h2>
-                            <b>
-                                Components - Componentes
-                            </b>
-                        </h2>
-                        <p> Funcionam como funções JavaScript. Os parametros de entrada são chamados de <i style="color:gray;">props</i> e o retorno é dado em elementos HTML (JSX) </p>
+                        <pre class="javascript"><code>npm start</code></pre>
+                        <pre class="javascript"><code>npm run build</code></pre>
+                        <pre class="javascript"><code>npm test</code></pre>
+                        <pre class="javascript"><code>npm run eject</code></pre>
                     </section>
                     <section>
                         <h2>
-                            <b>
-                                State - Estado
-                            </b>
+                            <b>2. Delete todos os arquivos do diretório src</b>
                         </h2>
-                        <p>
-                            O estado pode ser qualquer conjunto de informações que serão utilizadas em algum momento pela interface. Por exemplo: As informações do usuário, uma lista de itens, o resultado de um request ou até informações específicas de UI...
-                        </p>
+                        <pre class="linux"><code>
+    cd nome_da_aplicacao
+    rm -f src/*
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>Adicione um arquivo CSS chamado index.css no diretório src/ com <a target="_blank" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0100">esse código CSS</a></b>
+                        </h2>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>Adicione um arquivo JS chamado index.js no diretório src/ com <a target="_blank" href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010">esse código JS</a></b>
+                        </h2>
+                    </section>
+                    <section>
+                        <h2>
+                            <b>Adicione as três linhas abaixo no começo do arquivo index.js</b>
+                        </h2>
+                        <pre class="javascript"><code>
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import './index.css';
+                        </code></pre>
                     </section>
                 </section>
 

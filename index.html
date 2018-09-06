@@ -31,7 +31,7 @@
   <body>
   <div class="reveal">
     <div class="slides">
-      <section data-background-color="#00004d">
+      <section data-background="images/fundo-react.jpg">
 
         <h2>
           <b>React</b>
@@ -48,21 +48,33 @@
           </h2>
         </section>
         <section>
-
-          <ul>
-            <li>Versão atual: 16.X.</li>
-            <li>Utiliza o Virtual DOM.</li>
-          </ul>
-          <a href="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
-            <img style="width:1200px;margin-top: 20px; border:0px;background-color: transparent;margin: 0px;box-shadow: 0 0 0; " src="https://cdn-images-1.medium.com/max/1600/1*VKN_mqVAzDfqcTU1PM47wg.png">
-          </a>
+          <h2>
+            <b>O que é React?</b>
+          </h2>
+          <p>
+            O React é uma <i style="color:yellow">biblioteca</i> JavaScript declarativa, eficiente e flexível para criar interface para o usuário (UI).
+          </p>
         </section>
         <section>
+          <h2>
+            <b>Um pouco sobre React</b>
+          </h2>
           <ul>
-            <li>O React é baseado em componentes.</li>
+            <li>Versão atual: 16.X.</li>
             <li>Foi criado pelo facebook para lidar com o alto trafego de dados de uma página web.</li>
-            <li>Quando o projeto foi liberado em 2013, foi recebido com ceticismo.</li>
+            <li>Quando o projeto foi liberado em 2013, foi recebido com ceticismo pela comunidade.</li>
           </ul>
+
+        </section>
+        <section>
+        <ul>
+          <li>O React é baseado em componentes.</li>
+          <li>Utiliza o Virtual DOM.</li>
+          <li><a href="https://stackoverflow.com/questions/42217579/data-binding-in-react">One way data biding</a></li>
+        </ul>
+        </section>
+        <section data-background="images/vdom.jpg">
+
         </section>
         <section>
           <h2>
@@ -77,7 +89,6 @@
             <li>Provavelmente você precisará construir um webpack ou um   browserify para isto.</li>
           </ul>
         </section>
-
       </section>
       <section>
         <a target="_blank" href="https://reactjs.org/tutorial/tutorial.html">
@@ -113,6 +124,15 @@
             </h2>
           </a>
         </section>
+        <section>
+
+            <a target="_blank" href="https://trends.google.com/trends/explore?date=all&q=angular,react,ember">
+              <h2 data-background-color="black">
+                <b>Comparando bibliotecas e frameworks JavaScript</b>
+              </h2>
+            </a>
+
+        </section>
       </section>
       <section>
         <section>
@@ -121,15 +141,13 @@
           </h2>
         </section>
         <section>
+          <h2>
+            <b>É possivel integrar o React com o que?</b>
+          </h2>
           <ul>
-            <li>O React é uma biblioteca JavaScript declarativa, eficiente e flexível para criar interface para o usuário (UI).</li>
             <li>O React pode ser utilizado no modelo MVC, representando o "V".</li>
             <li>O React pode ser utilizado com frameworks como Angular, Ember... e em arquiteturas como Redux, Reflux, Flux ...</li>
-            <li>É possivel criar aplicações simples apenas com React.</li>
           </ul>
-        </section>
-        <section>
-          <img style=" border:0px;background-color: transparent;margin: 0px;box-shadow: 0 0 0;" width="1000px;" src="https://uploaddeimagens.com.br/images/001/591/899/full/graficojs.jpg?1535898747">
         </section>
       </section>
       <section>
@@ -167,11 +185,11 @@
           <p> Funcionam como funções JavaScript. Os parametros de entrada são chamados de <i style="color:gray;">props</i> e o retorno é dado pelo método <span>render</span>, o método devolve <a target="_blank" href="https://babeljs.io/repl/#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsIAHAQzEKjmjjYA9B26FhBQgG4AUKEix5UTgEswcOjCyMQwAK6p0AOgDmcKAFEkhqACEAngElGACgDkdECChuAlLIAlOE5gKAARAHkAWSM6NEYNF0QUNCgqJVV1On8ZIA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=6.26.0&envVersion=">elementos react (JSX)</a>, que é uma descrição do que queremos ver na tela. Facilita o reuso na aplicação.</p>
         </section>
         <section>
-          <h2>
-            <b>
+          <h3>
+            <b style="color: lawngreen">
               Javascript
             </b>
-          </h2>
+          </h3>
           <pre class="javascript"><code>
 function Welcome(props) {
   return <h1>Hello, world</h1>;
@@ -179,11 +197,11 @@ function Welcome(props) {
             </code></pre>
         </section>
         <section>
-          <h2>
-            <b>
+          <h3>
+            <b style="color: cadetblue">
               EC6
             </b>
-          </h2>
+          </h3>
                     <pre class="javascript"><code>
 class Welcome extends React.Component {
   render() {
@@ -199,11 +217,11 @@ class Welcome extends React.Component {
           <p>São as propriedades que são recebidas como parametros no componente. Não são alteradas. </p>
         </section>
         <section>
-          <h2>
-            <b>
+          <h3>
+            <b style="color: lawngreen">
               Javascript
             </b>
-          </h2>
+          </h3>
             <pre class="javascript"><code>
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
@@ -211,11 +229,11 @@ function Welcome(props) {
             </code></pre>
         </section>
         <section>
-          <h2>
-            <b>
+          <h3>
+            <b style="color: cadetblue">
               EC6
             </b>
-          </h2>
+          </h3>
             <pre class="javascript"><code>
 class Welcome extends React.Component {
   render() {
@@ -231,6 +249,12 @@ class Welcome extends React.Component {
             </b>
           </h2>
           <img style=" border:0px;background-color: transparent;margin: 0px;box-shadow: 0 0 0;" src="https://uploaddeimagens.com.br/images/001/593/299/full/rendereizarreact.png?1535995383">
+        </section>
+        <section data-background="images/render1.jpg">
+
+        </section>
+        <section data-background="images/render2.jpg">
+
         </section>
         <section>
           <h2>
@@ -285,7 +309,7 @@ HelloWithProps.propTypes = {
           </p>
         </section>
         <section>
-         <a href="https://gist.github.com/matheusml/ad61ee3a0c8631f7f6e11484b99c3ecb#file-container-js">Exemplo de Container usando state</a>
+         <a target="_blank" href="https://gist.github.com/matheusml/ad61ee3a0c8631f7f6e11484b99c3ecb#file-container-js">Exemplo de Container usando state</a>
         </section>
       </section>
       <section>
@@ -311,9 +335,9 @@ HelloWithProps.propTypes = {
             </b>
           </h2>
           <ul>
-            <li><a href="https://nodejs.org/en/">Node (versão > 6 LTS)</a></li>
-            <li><a href="https://www.npmjs.com/"> npm (versão > 3.x)</a> - incluso na instalação do node.js</li>
-            <li><a href="https://github.com/facebook/create-react-app">create-react-app</a></li>
+            <li><a target="_blank" href="https://nodejs.org/en/">Node (versão > 6 LTS)</a></li>
+            <li><a target="_blank" href="https://www.npmjs.com/"> npm (versão > 3.x)</a> - incluso na instalação do node.js</li>
+            <li><a target="_blank" href="https://github.com/facebook/create-react-app">create-react-app</a></li>
             <li>Editor de texto</li>
           </ul>
         </section>
@@ -328,13 +352,74 @@ HelloWithProps.propTypes = {
                             </code></pre>
         </section>
         <section>
-          <h2>
-            Comandos
-          </h2>
-          <pre class="javascript"><code>npm start</code></pre>
-          <pre class="javascript"><code>npm run build</code></pre>
-          <pre class="javascript"><code>npm test</code></pre>
-          <pre class="javascript"><code>npm run eject</code></pre>
+          <h2>Estrutura do Projeto</h2>
+          <table>
+            <thead>
+            <tr>
+              <th>Arquivo</th>
+              <th>Descrição</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><small>README.md</small></td>
+              <td><small>Arquivo de orientações do create-react-app. Está em inglês.</small></td>
+            </tr>
+            <tr>
+              <td><small>node_modules/</small></td>
+              <td><small>Todas as dependências necessárias para o projeto.</small></td>
+            </tr>
+            <tr>
+              <td><small>package.json</small></td>
+              <td><small>Arquivo de descrição do projeto. Possui informações como o nome, autor, versão e as dependências.</small></td>
+            </tr>
+            <tr>
+              <td><small>public/</small></td>
+              <td><small>Diretório que possui os arquivos públicos do seu projeto. Contém o html inicial.</small></td>
+            </tr>
+            <tr>
+              <td><small>src/</small></td>
+              <td><small>Pasta onde está contido todos os recursos do projeto, arquivos de imagem, css, javascript e afins.</small></td>
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Comandos npm</h2>
+          <table class="ctable">
+            <thead>
+            <tr>
+              <th>Comando</th>
+              <th>O que faz?</th>
+              <th>Resultado</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>start</td>
+              <td>Inicia o servidor de desenvolvimento</td>
+              <td>Na porta 3000 e abre o navegador automaticamente</td>
+            </tr>
+            <tr>
+              <td>test</td>
+              <td>Inicia a execução dos testes</td>
+              <td>Executa os testes utilizando o Jest e exibe os resultados no próprio console</td>
+            </tr>
+            <tr>
+              <td>run build</td>
+              <td>Reúne o aplicativo em arquivos estáticos para produção</td>
+              <td>Compila, traduz, minifica os recursos da aplicação e gera arquivos estáticos</td>
+            </tr>
+            <tr>
+              <td>run eject</td>
+              <td>Remove a dependência do “react-scripts” e copia explicitamente as ferramentas de build, configurações e scripts dentro do diretório da aplicação</td>
+              <td>Remove a dependência do “react-scripts” e deixa tudo manual para controle do desenvolvedor</td>
+            </tr>
+            </tbody>
+          </table>
+        </section>
+        <section data-background="images/ciclo-create-react-app.jpg">
+
         </section>
 <!--        <section>
           <h2>
@@ -389,7 +474,7 @@ HelloWithProps.propTypes = {
               Exercicio 3
             </b>
           </h2>
-          <p>Construa o jogo da velha apresentado na <a href="https://reactjs.org/tutorial/tutorial.html">documentação do React</a></p>
+          <p>Construa o jogo da velha apresentado na <a target="_blank" href="https://reactjs.org/tutorial/tutorial.html">documentação do React</a></p>
         </section>
       </section>
       <section>
@@ -397,8 +482,8 @@ HelloWithProps.propTypes = {
           <b>Mais do React:</b>
         </h2>
         <ul>
-          <li><a href="https://facebook.github.io/react-native/">React Native</a></li>
-          <li><a href="https://facebook.github.io/react-360/">React 360</a></li>
+          <li><a target="_blank" href="https://facebook.github.io/react-native/">React Native</a></li>
+          <li><a target="_blank" href="https://facebook.github.io/react-360/">React 360</a></li>
         </ul>
       </section>
       <section>
@@ -417,8 +502,14 @@ HelloWithProps.propTypes = {
         </section>
         <section>
           <ul>
-            <li>LIMA, Matheus. O Guia Completo do React e o seu Ecossistema. 2018. Disponível em: <a href="https://tableless.com.br/guia-completo-react-ecossistema/">https://tableless.com.br/guia-completo-react-ecossistema/</a>. Acesso em: 04 set. 2018.</li>
+            <li>LIMA, Matheus. O Guia Completo do React e o seu Ecossistema. 2018. Disponível em: <a target="_blank" href="https://tableless.com.br/guia-completo-react-ecossistema/">https://tableless.com.br/guia-completo-react-ecossistema/</a>. Acesso em: 04 set. 2018.</li>
             <li>BANKS, Alex; PORCELLO, Eve. Learning React: Functional Web Development with React and Redux. " O'Reilly Media, Inc.", 2017.</li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>GURNANI, Vaibhav. React JS – To Infinity & Beyond: Web Application / Web Development. 2017. Disponível em: <a href="http://www.systango.com/blog/react-js-infinity">http://www.systango.com/blog/react-js-infinity</a>. Acesso em: 06 set. 2018.</li>
+            <li>MARTINS DE PINHO, Diego. INTRODUÇÃO AO REACT. 2017. Disponível em: <a target="_blank" href="https://codeprestige.github.io/curso-introducaoreact/#/">https://codeprestige.github.io/curso-introducaoreact/#/</a>. Acesso em: 06 set. 2018..</li>
           </ul>
         </section>
       </section>
